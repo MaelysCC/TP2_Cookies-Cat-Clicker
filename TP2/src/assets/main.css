@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    radial-gradient(circle at top, #161202 0%, #ebe1d0 45%, #200f03 100%);
+
+  color: #0d0501;
+}
+
+/* Conteneur général */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Titres */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5px;
+  margin-bottom: 25px;
+
+  color: #210d03;
+
+  text-shadow:
+    2px 2px 0 #806f51,
+    3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #311605;
+  margin-top: 10px;
+  border-bottom: 2px solid #2b1a05;
+  padding-bottom: 8px;
+}
+
+/* Toutes les cartes */
+.card {
+  background: rgba(255, 250, 235, 0.95);
+
+  border: 2px solid #1a0d02;
+  border-radius: 18px;
+
+  padding: 22px;
+  margin: 20px auto;
+
+  max-width: 700px;
+
+  box-shadow:
+    0 8px 20px rgba(73, 39, 17, 0.25);
+}
+
+/* COOKIE CLICKER */
+
+.cookie-game {
+  text-align: center;
+}
+
+.cookie-counter {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #261204;
+
+  background: #fff4d3;
+
+  padding: 12px;
+  border-radius: 12px;
+
+  border: 1px solid #504b42;
+}
+
+/* Gros bouton cookie */
+.cookie-button {
+  width: 220px;
+  height: 220px;
+
+  padding: 0;
+  margin: 20px auto;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cookie-button .image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.cookie-button:hover {
+  transform: scale(1.05);
+}
+
+.cookie-button:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 2px 0 #2d1304,
+    0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Sections upgrade */
+.upgrade {
+  background: #fff7df;
+
+  border: 1px solid #201202;
+  border-radius: 12px;
+
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* Boutons normaux */
+button {
+  border: none;
+  border-radius: 9px;
+
+  padding: 10px 17px;
+  margin: 5px;
+
+  background: #291304;
+  color: white;
+
+  font-weight: bold;
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #3c1e06;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #4f4a45;
+  color: #150f09;
+
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Inputs */
+
+input {
+  padding: 10px 12px;
+
+  border-radius: 8px;
+  border: 2px solid #281b0d;
+
+  background: #fffaf0;
+
+  color: #27160b;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  margin: 5px;
+}
+
+input:focus {
+  border-color: #25160d;
+}
+
+/* LOGIN */
+
+.login {
+  text-align: center;
+}
+
+/* CLASSEMENT */
+
+.leaderboard ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.leaderboard li {
+  background: #fff4d6;
+
+  border: 1px solid #281d0a;
+  border-radius: 10px;
+
+  margin: 8px 0;
+  padding: 12px;
+
+  font-weight: bold;
+}
+
+.leaderboard li:nth-child(1) {
+  background: #e7b616;
+  font-size: 1.15rem;
+}
+
+.leaderboard li:nth-child(2) {
+  background: #ece7df;
+}
+
+.leaderboard li:nth-child(3) {
+  background: #e5ba8e;
+}
+
+/* ADMIN */
+
+.admin {
+  border-color: #8b2525;
+}
+
+.admin h2 {
+  color: #9a2929;
+  border-color: #c55757;
+}
+
+.admin-user {
+  background: #fff2e8;
+
+  border: 1px solid #dd9c78;
+  border-radius: 10px;
+
+  margin: 10px 0;
+  padding: 12px;
+}
+
+/* Ligne de séparation */
+
+hr {
+  border: none;
+  border-top: 2px solid #d5a363;
+  margin: 25px 0;
+}
+
+
+
+@media (max-width: 600px) {
+  #app {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+
+}
